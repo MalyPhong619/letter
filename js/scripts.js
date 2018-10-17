@@ -3,13 +3,16 @@ $(function() {
     event.preventDefault();
     $("#story").show();
     $("#formOne").hide();
-        var userName = $("#person1").val();
-        var userCity = $("#city").val();
-        var userstreet = $("#street").val();
+        var userName = $("#person1").val().toUpperCase();
+        var userCity = $("#city").val().toUpperCase();
+        var userstreet = $("#street").val().toUpperCase();
+        var shouting = ("Hey stop what you're doing").toUpperCase();
+
 
         $("#userCity").text(userName);
         $("#userName").text(userCity);
        $("#userAddress").text(userstreet);
+       $("#shout").text(shouting);
 
       // $("#userName").append("Alexander");
       // $("#userCity").append("Portand");
